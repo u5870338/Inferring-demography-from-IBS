@@ -5,6 +5,9 @@ seq_length=int(sys.argv[2])
 lines=infile.readlines()
 infile.close()
 
+length_out =0
+lengths = []
+
 for line in lines:
     if line.startswith('positions:'):
         line.strip('\n')
